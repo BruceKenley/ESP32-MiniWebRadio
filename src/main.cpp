@@ -97,13 +97,13 @@ char _hl_item[10][40]{                          // Title in headline
                 "** Internet Radio **",         // "* интернет-радио *"  "ραδιόφωνο Internet"
                 "** Internet Radio **",
                 "** Internet Radio **",
-                "** Uhr **",                    // Clock "** часы́ **"  "** ρολόι **"
-                "** Uhr **",
-                "** Helligkeit **",             // Brightness яркость λάμψη
+                "** Clock **",                    // Clock "** часы́ **"  "** ρολόι **"
+                "** Clock **",
+                "** Brightness **",             // Brightness яркость λάμψη
                 "** Audioplayer **",            // "** цифрово́й плеер **"
                 "** Audioplayer **",
                 "" ,                            // Alarm should be empty
-                "* Einschlafautomatik *",       // "Sleeptimer" "Χρονομετρητής" "Таймер сна"
+                "* Sleeptimer *",       // "Sleeptimer" "Χρονομετρητής" "Таймер сна"
 };
 
 enum status{RADIO = 0, RADIOico = 1, RADIOmenue = 2,

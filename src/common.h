@@ -7,13 +7,13 @@
 #define _SSID               "The Farm"                        // Your WiFi credentials here
 #define _PW                 "Rivendell"
 #define TZName              "EST-10EST,M10.1.0,M4.1.0/3"    // Timezone (more TZNames in "rtime.cpp")
-#define DECODER             0                               // (0)VS1053 , (1)MAX98357A PCM5102A... (2)AC101 (3)ES8388 (4)WM8978
-#define TFT_CONTROLLER      0                               // (0)ILI9341, (1)HX8347D, (2)ILI9486a, (3)ILI9486b, (4)ILI9488
-#define DISPLAY_INVERSION   0                               // (0) off (1) on
+#define DECODER             1                               // (0)VS1053 , (1)MAX98357A PCM5102A... (2)AC101 (3)ES8388 (4)WM8978
+#define TFT_CONTROLLER      4                               // (0)ILI9341, (1)HX8347D, (2)ILI9486a, (3)ILI9486b, (4)ILI9488
+#define DISPLAY_INVERSION   1                               // (0) off (1) on
 #define TFT_FREQUENCY       40000000                        // 27000000, 40000000, 80000000
 #define TFT_ROTATION        3                               // 1 or 3 (landscape)
-#define TP_VERSION          0                               // (0)ILI9341, (1)ILI9341RPI, (2)HX8347D, (3)ILI9486, (4)ILI9488
-#define TP_ROTATION         3                               // 1 or 3 (landscape)
+#define TP_VERSION          4                               // (0)ILI9341, (1)ILI9341RPI, (2)HX8347D, (3)ILI9486, (4)ILI9488
+#define TP_ROTATION         1                              // 1 or 3 (landscape)
 #define AUDIOTASK_CORE      1                               // 0 or 1
 #define AUDIOTASK_PRIO      2                               // 0 ... 24  Priority of the Task (0...configMAX_PRIORITIES -1)
 #define SDMMC_FREQUENCY     20000000                        // 40000000, 2000000, 10000000, not every SD Card will run at 40MHz
@@ -60,10 +60,10 @@
     #if DECODER == 0
         #define VS1053_CS     33
         #define VS1053_DCS     4
-        #define VS1053_DREQ   25
+        #define VS1053_DREQ   36
         #define VS1053_MOSI   13  // VS1053     (HSPI)
-        #define VS1053_MISO   12  // VS1053     (HSPI)
-        #define VS1053_SCK    18  // VS1053     (HSPI) (sometimes we need a 1k resistor against ground)
+        #define VS1053_MISO   34  // VS1053     (HSPI)
+        #define VS1053_SCK    12  // VS1053     (HSPI) (sometimes we need a 1k resistor against ground)
     #else
         #define I2S_DOUT      25
         #define I2S_DIN       -1  // pin not used
