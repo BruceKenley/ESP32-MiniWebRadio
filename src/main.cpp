@@ -117,6 +117,19 @@ String         _TZString = "CET-1CEST,M3.5.0,M10.5.0/3";
 String         _media_downloadIP = "";
 vector<String> _names{};
 
+<<<<<<< HEAD
+char _hl_item[10][40]{                          // Title in headline
+                "** Internet Radio **",         // "* интернет-радио *"  "ραδιόφωνο Internet"
+                "** Internet Radio **",
+                "** Internet Radio **",
+                "** Clock **",                    // Clock "** часы́ **"  "** ρολόι **"
+                "** Clock **",
+                "** Brightness **",             // Brightness яркость λάμψη
+                "** Audioplayer **",            // "** цифрово́й плеер **"
+                "** Audioplayer **",
+                "" ,                            // Alarm should be empty
+                "* Sleeptimer *",       // "Sleeptimer" "Χρονομετρητής" "Таймер сна"
+=======
 char _hl_item[11][40]{
     "   Internet Radio   ", // "* интернет-радио *"  "ραδιόφωνο Internet"
     "   Internet Radio   ", //
@@ -129,6 +142,7 @@ char _hl_item[11][40]{
     "    Alarm (hh:mm)   ", // Alarm
     "  Off Timer (h:mm)  ", // "Sleeptimer" "Χρονομετρητής" "Таймер сна"
     "        DLNA        ", // Digital Living Network Alliance
+>>>>>>> d78a6413a2ba885ef8fd5a7f4aaca62b68957a0f
 };
 
 enum status {

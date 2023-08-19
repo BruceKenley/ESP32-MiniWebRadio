@@ -702,7 +702,7 @@ class TP : public TFT {
         uint16_t x=0, y=0;
         uint8_t _rotation;
         boolean f_loop=false;
-        //const uint8_t TP_Dummy=0x80; //nur Startbit für XPT2046
+        const uint8_t TP_Dummy=0x80; //nur Startbit für XPT2046
         float xFaktor;
         float yFaktor;
 
